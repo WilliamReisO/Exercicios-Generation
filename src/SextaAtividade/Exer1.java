@@ -43,7 +43,7 @@ public class Exer1 {
 			case 2:
 				
 				Leitura.nextLine();
-				System.out.println("\n    -- Listar Todos os Clientes na Fila \n" + Fila.size());
+				System.out.println("\n    -- Listar Todos os Clientes na Fila \n" + Fila);
 				break;
 
 			case 3:
