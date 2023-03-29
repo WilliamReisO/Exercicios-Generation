@@ -2,11 +2,11 @@ package ProgramaçãoOrientObjeto;
 
 import java.util.Scanner;
 
-public class PessoaFisica extends Pessoa implements  Cliente {
+public abstract class PessoaFisica extends Pessoa implements  Cliente {
 	
-	private static String CPF;
-	private static String Email;
-	private static double Telefone;
+	private  String CPF;
+	private  String Email;
+	private  double Telefone;
 	
 
 
@@ -16,36 +16,37 @@ public class PessoaFisica extends Pessoa implements  Cliente {
 	}
 
 
-	public static String getCPF() {
+	public String getCPF() {
 		return CPF;
 	}
 
 
-	public static void setCPF(String cPF) {
+	public void setCPF(String cPF) {
 		CPF = cPF;
 	}
 
 
-	public static String getEmail() {
+	public String getEmail() {
 		return Email;
 	}
 
 
-	public static void setEmail(String email) {
+	public void setEmail(String email) {
 		Email = email;
 	}
 
 
-	public static double getTelefone() {
+	public double getTelefone() {
 		return Telefone;
 	}
 
 
-	public static void setTelefone(double telefone) {
+	public void setTelefone(double telefone) {
 		Telefone = telefone;
 	}
 
 
+	@Override
 	public void novocadastroPF() {
 		Scanner ler = new Scanner(System.in);
     	
@@ -98,9 +99,8 @@ public class PessoaFisica extends Pessoa implements  Cliente {
 		
 	}
 	
-
-
-	public  void  confirmaInfoPf() { 
+    @Override
+	public void  confirmaInfoPf() { 
 		System.out.println("\n Nome Cliente Pessoa Fisica :"+getNomeCliente());
 		System.out.println("\n Email :" + getEmail());
 		System.out.println("\n Telefone: "+getTelefone());

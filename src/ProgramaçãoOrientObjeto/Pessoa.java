@@ -2,7 +2,7 @@ package ProgramaçãoOrientObjeto;
 
 import java.util.Scanner;
 
-public class Pessoa implements Cliente {
+public abstract class Pessoa implements Cliente {
 	private static String NomeCliente;
 	private static String PaisDeOrigem;
 	private static String Sexo;
@@ -78,8 +78,8 @@ public class Pessoa implements Cliente {
 	public void naoCadastros() {
 		System.out.println("\nFunçao não Habilitada, ja iremos solucionar o Problema");
 	}
-	
-    public static void menuDeopcao1() {
+	@Override
+    public void menuDeopcao1() {
     	Scanner ler = new Scanner(System.in);
     	System.out.println("--------------------------ACADEMIA--DO--WILLIAM----------------------------------");
 		System.out.println("#                                                                                #");
@@ -93,5 +93,12 @@ public class Pessoa implements Cliente {
 		System.out.println("#                                                                                #");
 		System.out.println("---------------------------------------------------------------------------------\n\n");
 		
-    }
+    
+	}
+
+
+	public void cadastroInfoPJ() {
+		// TODO Auto-generated method stub
+		
+	}
 }

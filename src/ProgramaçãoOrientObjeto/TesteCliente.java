@@ -7,27 +7,27 @@ public class TesteCliente {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		PessoaFisica pessoaFisica = new PessoaFisica(null, null, null, 0, 0);
-		PessoaJuridica pessoaJuri = new PessoaJuridica(null, null, null, 0, 0);
-		Cliente consta = new Cliente(null, null, null, 0, 0);
+		PessoaFisica ClientePF = null  ;
+		PessoaJuridica ClientePJ = null ;
+		//CRIAR UM METODO Lista de cadastro em pessoa .
+	//	listaCdastro Lista = 
 
 		Scanner ler = new Scanner(System.in);
 		int opcao, cliente;
 
 		do {
-			Cliente.menuDeopcao1();
+			
 			opcao = ler.nextInt();
 
 				switch (opcao) {
 
 				case 1:
-					
-					pessoaFisica.confirmaInfoPf();
+						ClientePF.confirmaInfoPf();
 					
 					System.out.println("\n\nCadastro completo !!! \n");
 
 				case 2:
-					pessoaJuri.cadastroInfoPJ();
+					ClientePJ.cadastroInfoPJ();
 					System.out.println("\n\nCadastro completo !!! \n");
 					break;
 				

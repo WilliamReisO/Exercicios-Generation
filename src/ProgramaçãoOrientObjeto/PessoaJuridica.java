@@ -2,57 +2,75 @@ package ProgramaçãoOrientObjeto;
 
 import java.util.Scanner;
 
-public class PessoaJuridica extends Pessoa implements Cliente{
+public abstract class PessoaJuridica extends Pessoa implements Cliente{
 	
-	private static String cnpj ;
-	private static String rg ;
-	private static String Email;
-	private static int Telefone;
+	private String cnpj ;
+	private String rg ;
+	private String Email;
+	private int Telefone;
 
 
-	
-	public PessoaJuridica(String nomeCliente, String paisDeOrigem, String sexo, int idade, int diasPorSemana) {
+
+	public PessoaJuridica(String nomeCliente, String paisDeOrigem, String sexo, int idade) {
 		super(nomeCliente, paisDeOrigem, sexo, idade);
 		// TODO Auto-generated constructor stub
 	}
 
-	public static String getCnpj() {
+
+
+	public String getCnpj() {
 		return cnpj;
 	}
 
-	public static void setCnpj(String cnpj) {
-		PessoaJuridica.cnpj = cnpj;
+
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
 	}
 
-	public static String getRg() {
+
+
+	public String getRg() {
 		return rg;
 	}
 
-	public static void setRg(String rg) {
-		PessoaJuridica.rg = rg;
+
+
+	public void setRg(String rg) {
+		this.rg = rg;
 	}
 
-	public static String getEmail() {
+
+
+	public String getEmail() {
 		return Email;
 	}
 
-	public static void setEmail(String email) {
+
+
+	public void setEmail(String email) {
 		Email = email;
 	}
 
-	public static int getTelefone() {
+
+
+	public int getTelefone() {
 		return Telefone;
 	}
 
-	public static void setTelefone(int telefone) {
+
+
+	public void setTelefone(int telefone) {
 		Telefone = telefone;
 	}
 
-	
-	public void cadastroPJ() {
+
+
+/*		@Override 
+public void cadastroPJ() {
 		Scanner ler = new Scanner(System.in);
     	
-		
+		PessoaJuridica 
 		System.out.println("\nDigite seu nome :");
 		String nomecliente= ler.nextLine();
 		setNomeCliente(nomecliente);
@@ -74,17 +92,17 @@ public class PessoaJuridica extends Pessoa implements Cliente{
 	    setIdade(idade);
 	    ler.nextLine();
 	    
-	 /*   System.out.println("\nDigite quantos dias por semana vc esta aqui conosco :");
+	    System.out.println("\nDigite quantos dias por semana vc esta aqui conosco :");
 	    int frequencia = ler.nextInt();
 	    setFrequencia(frequencia);
-	    ler.nextLine();*/
+	    ler.nextLine();
 	 
 	    System.out.println("\nDigite seu CNPJ : ");
 	    String cnpj = ler.nextLine();
 	    setCnpj(cnpj);
 	    ler.nextLine();
 	    
-	    System.out.println("\nDigite seu CNPJ : ");
+	    System.out.println("\nDigite seu RG : ");
 	    String RG = ler.nextLine();
 	    setRg(RG);
 	    ler.nextLine();
@@ -99,11 +117,12 @@ public class PessoaJuridica extends Pessoa implements Cliente{
 	    setTelefone(telefone);
 	    ler.nextLine();
 	    
+	    return ;
 	    System.out.println("\n\nCadastro completo !!! \n");
 	}
-
+*/
 	
-
+	@Override
 	public void cadastroInfoPJ() {
 		
 	System.out.println("\n Nome Cliente Pessoa Fisica :"+getNomeCliente());
