@@ -17,7 +17,7 @@ public class WhileEx2 {
 	
  
 		 
-   while(Leitura = N){
+  /* while(!=int){
  
 	 	 System.out.println("\nDigite sua Idade :");
 		 idade = Leitura.nextInt();
@@ -38,7 +38,7 @@ public class WhileEx2 {
 	
  	 System.out.println("\nCategoria");
      categoria = Leitura.nextInt();
- 	
+ 
  	switch(categoria){
  	
  		caso 1 : Back++;
@@ -61,12 +61,12 @@ public class WhileEx2 {
  	N = Leitura.nextLine();
  	
  	}
-}
- 			System.out.println("\O número de pessoas desenvolvedoras Backend :"+Back);
+
+ 			/*System.out.println("\O número de pessoas desenvolvedoras Backend :"+Back);
  			System.out.println("\O número de mulheres desenvolvedoras Frontend:"+FemFront);
  			System.out.println("\O número de homens desenvolvedores Mobile maiores de 40 anos");
  			System.out.println("\O número de mulheres desenvolvedoras FullStack menores de 30 anos");
-	 
+	 */
 	}
 
 }
